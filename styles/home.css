@@ -50,9 +50,25 @@ main {
 }
 
 .description {
+    margin-top: 40px;
     grid-area: description;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.description h1{
+    font-size: 44px;
+    color: black;
+}
+
+.description p{
+    font-size: 16px;
+    color: black;
+}
+
+#personal_image {
+    width: 50%;
+    border-radius: 50%;
 }
