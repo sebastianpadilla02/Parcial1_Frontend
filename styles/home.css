@@ -1,6 +1,5 @@
 body{
     margin: 0 auto; 
-    padding: 0 200px;
     font-family: 'Heebo', sans-serif;
     background-color: white;
 }
@@ -26,6 +25,11 @@ main {
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+}
+
+.header nav {
+    display: flex;
+    margin-right: 80px;
 }
 
 .mobile-menu-icon {
@@ -63,10 +67,9 @@ main {
     border-radius: 3px;
 }
 
-
 .description {
-    margin-top: 40px;
-    padding: 0 10px;
+    margin-top: 80px;
+    padding: 0 120px;
     grid-area: description;
     display: flex;
     flex-direction: row;
@@ -77,7 +80,7 @@ main {
 .description div {
     flex: 1; 
     max-width: 60%;
-    padding-right: 150px;
+    padding-right: 100px;
 }
 
 .description h1{
@@ -116,10 +119,12 @@ main {
 }
 
 #personal_image {
+    flex: 1; 
     width: 60%;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: -5px 15px 0 0px rgba(237, 247, 250, 1);
+    
 }
 
 .posts {
