@@ -124,16 +124,79 @@ main {
     border-radius: 50%;
     object-fit: cover;
     box-shadow: -5px 15px 0 0px rgba(237, 247, 250, 1);
-    
+
 }
 
 .posts {
     grid-area: posts;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
     margin-top: 40px;
     background-color: #EDF7FA;
+}
+
+.first-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+    margin-top: 10px;
+}
+
+.first-line p{
+    font-size: 22px;
+    color: black;
+    margin: 10px 0;
+}
+
+.first-line a{
+    font-size: 16px;
+    color: #00A8CC;
+    text-decoration: none;
+}
+
+.published-posts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 120px;
+    gap: 20px;
+}
+
+.published-posts li{
+    list-style-type: none;
+}
+
+.post-box {
+    background-color: white;
+    border-radius: 4px;
+    padding: 5px 23px;
+}
+
+.post-box h2{
+    font-size: 26px;
+    color: black;
+}
+
+.post-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+    gap: 10px;
+}
+
+.bar-vertical {
+    width: 1px;
+    height: 20px;
+    background-color: #000;
+    margin: 0 10px;
+}
+
+.post-description {
+    font-size: 16px;
+    color: black;
 }
 
 /* Media query para móvil */
