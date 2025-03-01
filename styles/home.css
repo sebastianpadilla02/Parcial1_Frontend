@@ -168,6 +168,7 @@ main {
 }
 
 .post-box {
+    flex: 1;
     background-color: white;
     border-radius: 4px;
     padding: 5px 23px;
@@ -292,10 +293,15 @@ main {
 /* Media query para móvil */
 @media (max-width: 768px) {
     body {
-        margin: 0 auto; 
-        padding: 0 200px;
+        margin: 0; 
+        padding: 0;
     }
     
+    .main {
+        width: 100%;
+        height: auto; /* Permite que la altura se ajuste al contenido */
+    }
+
     .main-menu {
         display: none; /* Oculta el menú normal */
     }
@@ -305,7 +311,7 @@ main {
     }
 
     .header {
-        padding: 10px;
+        padding: 10px 20px;
         justify-content: flex-end; /* Alinea el ícono a la derecha */
     }
 
@@ -351,5 +357,72 @@ main {
     .btn {
         margin-top: 20px;
         padding: 8px 20px;
+    }
+
+    .first-line {
+        padding: 0 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first-line p{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .first-line a {
+        display: none; /* Oculta el enlace "View all" */
+    }
+
+    .published-posts {
+        padding: 0 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .post-box h2 {
+        font-size: 22px; /* Ajusta el tamaño de la fuente según sea necesario */
+    }
+
+    .post-info {
+        font-size: 16px; /* Ajusta el tamaño de la fuente según sea necesario */
+        gap: 5px; /* Ajusta el espacio entre los elementos según sea necesario */
+    }
+
+    .post-description {
+        line-height: 1.5;
+    }
+
+    .works {
+        padding: 0 20px;
+    }
+
+    .published-works li:not(:first-child) {
+        display: none;
+    }
+
+    .work-box {
+        flex-direction: column;
+    }
+
+    .work-info{
+        padding: 20px 0;
+    }
+
+    .work-info h2 {
+        font-size: 22px;
+    }
+
+    .work-info div {
+        font-size: 16px;
+        gap: 10px;
+    }
+
+    .age {
+        padding: 2px 8px;
+    }
+
+    .work-info p{
+        margin-top: 0;
     }
 }
