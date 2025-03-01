@@ -1,0 +1,173 @@
+body{
+    margin: 0 auto; 
+    font-family: 'Heebo', sans-serif;
+    background-color: white;
+}
+
+.main {
+    display: grid;
+    grid-template-areas: "header" "posts" "footer";
+    gap: 10px;
+    height: 80vh;
+}
+
+.header{
+    margin-top: 20px;
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header nav {
+    display: flex;
+    margin-right: 80px;
+}
+
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+    padding: 15px;
+}
+
+#option {
+    color: #EB0000;
+}
+
+.main-menu{
+    display: flex;
+    gap: 30px;
+    margin: 0px;
+    padding: 0;
+    padding-right: 0px;
+}
+
+.main-menu li{
+    list-style-type: none;
+    margin:0;
+}
+
+.main-menu li a{
+    font-size: 20px;
+    font-weight: 600;
+    color:black;
+    text-decoration: none;
+    transition: margin 3s ease;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px 0;
+    border-radius: 3px;
+}
+
+.posts {
+    margin-top: 80px;
+    padding: 0 200px;
+    grid-area: posts;
+    display: flex;
+    flex-direction: column;
+}
+
+.posts h1{
+    font-size: 44px;
+    margin: 0;
+}
+
+.posts li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.published-posts {
+    padding: 0;
+}
+
+.post-box h2{
+    margin: 0;
+}
+
+.post-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+    gap: 10px;
+}
+
+.post-info p{
+    margin: 10px 0;
+}
+
+.bar-vertical {
+    width: 1px;
+    height: 20px;
+    background-color: #000;
+    margin: 0 10px;
+}
+
+.post-type {
+    color: #6B768F;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-content p{
+    font-size: 14px;
+    color: #21243D;
+}
+
+.social-networks{
+    display: flex;
+    gap: 35px;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0; 
+        padding: 0;
+    }
+    
+    .main {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .header {
+        padding: 10px 20px;
+        justify-content: flex-end;
+    }
+
+    .posts {
+        padding: 0 20px;
+    }
+}
