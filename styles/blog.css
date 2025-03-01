@@ -26,13 +26,13 @@ body{
 }
 
 .mobile-menu-icon {
-    display: none; /* Oculto por defecto */
+    display: none;
     cursor: pointer;
     padding: 15px;
 }
 
 #option {
-    color: #FF6464;
+    color: #EB0000;
 }
 
 .main-menu{
@@ -112,7 +112,7 @@ body{
 }
 
 .post-type {
-    color: #8695A4;
+    color: #6B768F;
 }
 
 footer {
@@ -151,20 +151,20 @@ footer {
     
     .main {
         width: 100%;
-        height: auto; /* Permite que la altura se ajuste al contenido */
+        height: auto;
     }
 
     .main-menu {
-        display: none; /* Oculta el menú normal */
+        display: none;
     }
 
     .mobile-menu-icon {
-        display: block; /* Muestra el ícono de hamburguesa */
+        display: block;
     }
 
     .header {
         padding: 10px 20px;
-        justify-content: flex-end; /* Alinea el ícono a la derecha */
+        justify-content: flex-end;
     }
 
     .posts {
