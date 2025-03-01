@@ -261,6 +261,34 @@ main {
     font-weight: 600;
 }
 
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-content p{
+    font-size: 14px;
+    color: #21243D;
+}
+
+.social-networks{
+    display: flex;
+    gap: 35px;
+}
+
 /* Media query para móvil */
 @media (max-width: 768px) {
     body {
