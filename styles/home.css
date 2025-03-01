@@ -4,13 +4,6 @@ body{
     background-color: white;
 }
 
-main {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
 .main {
     display: grid;
     grid-template-areas: "header" "description" "posts" "works" "footer";
