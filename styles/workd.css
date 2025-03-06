@@ -88,7 +88,7 @@ body{
 }
 
 .age {
-    background-color: #FF7C7C;
+    background-color: #EB0000;
     color: white;
     padding: 0 10px;
     border-radius: 16px;
@@ -97,7 +97,7 @@ body{
 }
 
 .work-type {
-    color: #8695A4;
+    color: #6B768F;
     font-size: 20px;
     margin: 0;
 }
