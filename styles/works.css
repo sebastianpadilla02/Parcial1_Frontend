@@ -112,10 +112,21 @@ body{
     flex-direction: column;
 }
 
-.work-info h2{
+.work-title {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.work-title:hover {
+    color: #EB0000; 
+}
+
+.work-title h2 {
+    margin: 0;
+    transition: color 0.3s ease;
     font-size: 26px;
     color: black;
-    margin: 0;
 }
 
 .work-info div {
